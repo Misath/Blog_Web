@@ -12,9 +12,9 @@
             <h1>Les origines du Web</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#article">Articles</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,16 +22,18 @@
     <section>
         <figure>
             <img src="Image/Sir_Tim_Berners-Lee.webp" alt="Tim Berners-Lee, inventeur du Web" width="300">
-            <figcaption>Tim Berners-Lee, inventeur du Web en 1989.</figcaption>
+            <figcaption><em>Tim Berners-Lee, inventeur du Web en 1989</em></figcaption>
         </figure>
     </section>
+
     <section class="Introduction">
         <h2>Introduction</h2>
         <p>En 1989, Tim Berners-Lee, un scientifique travaillant au CERN (Organisation Européenne pour la Recherche Nucléaire), a inventé le World Wide Web. Son objectif était de créer un système permettant aux chercheurs de partager facilement des documents et des informations à travers un réseau de communication. Sa création a rapidement révolutionné la façon dont les informations sont échangées et accessibles dans le monde entier, ouvrant la voie à la transformation numérique et à l'Internet tel que nous le connaissons aujourd'hui. Grâce à cette invention, le Web est devenu un outil indispensable dans de nombreux aspects de la vie quotidienne, de l'éducation à la communication en passant par le commerce.</p>
         <p>L'objectif de Tim Berners-Lee en inventant le World Wide Web était de créer un moyen de partager facilement des informations entre chercheurs. Avant cette invention révolutionnaire, l'échange de données et de documents était souvent compliqué et limité par des technologies moins flexibles. Grâce au Web, les informations pouvaient être rapidement et efficacement partagées, indépendamment de l'emplacement géographique des utilisateurs. Cette innovation a non seulement facilité la communication scientifique mais a également jeté les bases de l'Internet moderne, devenant ainsi un outil essentiel pour la société contemporaine.</p>
         <p>La mise en ligne du premier site web en 1991 a marqué un tournant décisif dans l'histoire de l'Internet. Ce site a servi de modèle et de guide pour les développeurs et les utilisateurs, offrant une démonstration concrète des possibilités qu'offrait cette nouvelle technologie. Très vite, d'autres sites ont commencé à émerger, et le World Wide Web a connu une croissance exponentielle. En quelques années, le Web est devenu un outil indispensable pour la recherche, l'éducation, la communication, et bien plus encore. La création de ce premier site web a véritablement pavé la voie à la révolution numérique que nous vivons aujourd'hui.</p>
         <p>Aujourd'hui, Internet est devenu un outil incontournable dans notre quotidien. Il nous permet de rester connectés avec nos proches, de travailler à distance, de faire des achats en ligne, de nous informer en temps réel et de nous divertir. Les services en ligne, les réseaux sociaux et les applications de communication ont transformé notre façon de vivre et de fonctionner, rendant le monde plus interconnecté que jamais. Avec l'accès à une quantité illimitée d'informations et de ressources, Internet est devenu un élément central de notre société moderne, facilitant les interactions et ouvrant de nouvelles opportunités dans tous les domaines.</p>
-    </section>
+    
+
     <section id="article">
         <h2>Articles à venir</h2>
     
@@ -56,13 +58,75 @@
             <a href="#">Lire la suite</a>
         </article>
     </section>
-    <section id="contact">
+    <section id="À propos de moi">
         <h2>À propos de moi</h2>
         <p><strong>Nom :</strong>Misath YAYI</p>
         <p><strong>Profession :</strong> Référent Digital</p>
         <p><strong>Email :</strong> yayimimie@gmail.com</p>
         <p><strong>Téléphone :</strong> 01 59 28 32 40</p>
-    </section><br>
+    </section><br></section><section id="about">
+        <h2>À propos</h2>
+        <p>Voici les dates importantes des origines du Web :</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Année</th>
+                    <th>Événement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1989</td>
+                    <td>Tim Berners-Lee propose le concept du World Wide Web.</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>Première page Web mise en ligne.</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>Naissance du premier navigateur graphique : Mosaic.</td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>Création de Google.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="service">Service à contacter :</label>
+            <select id="service" name="service">
+                <option value="support">Support technique</option>
+                <option value="commercial">Service commercial</option>
+                <option value="autre">Autre</option>
+            </select>
+    
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <div class="consen">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span for="newsletter">S'inscrire à la newsletter</span>
+            </div>
+    
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+
 
     <footer class="footer">
         <div>
